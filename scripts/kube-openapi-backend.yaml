@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: "Cloud Solutions Academy E2E Google API Endpoint"
-  title: "Endpoints Example"
+  title: "Cloud Solutions Academy E2E Google API Endpoint"
   version: "1.0.0"
 host: "api.cloudsolutions.academy"
 consumes:
