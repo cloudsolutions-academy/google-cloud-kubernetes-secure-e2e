@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: kube-e2e-service
-        image: gcr.io/navveen-api/kube-e2e-solution:v1
+        image: gcr.io/<project-id>/google_cloud_kubernetes_secure_e2e:v1
         ports:
           - containerPort: 8080
       - name: kube-esp
