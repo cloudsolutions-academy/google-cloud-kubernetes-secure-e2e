@@ -1,11 +1,9 @@
-# [START swagger]
 swagger: "2.0"
 info:
-  description: "Kube Google API Endpoint"
+  description: "Cloud Solutions Academy E2E Google API Endpoint"
   title: "Endpoints Example"
   version: "1.0.0"
-host: "apis.endpoints.<project-id>.cloud.goog"
-# [END swagger]
+host: "api.cloudsolutions.academy"
 consumes:
 - "application/json"
 produces:
