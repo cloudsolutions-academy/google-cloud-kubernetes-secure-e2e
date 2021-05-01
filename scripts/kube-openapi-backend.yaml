@@ -4,7 +4,7 @@ info:
   description: "Kube Google API Endpoint"
   title: "Endpoints Example"
   version: "1.0.0"
-host: "apis.navveenbalani.dev"
+host: "apis.endpoints.<project-id>.cloud.goog"
 # [END swagger]
 consumes:
 - "application/json"
