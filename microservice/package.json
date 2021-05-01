@@ -1,8 +1,8 @@
 {
-  "name": "kube_e2e_solution",
+  "name": "google_cloud_kubernetes_secure_e2e",
   "version": "1.0.0",
-  "description": "kube_e2e_solution",
-  "author": "me@navveenbalani.com",
+  "description": "google_cloud_kubernetes_secure_e2e_solution",
+  "author": "cloudsolutionsacademy@gmail.com",
   "license" : "GPL-3.0-or-later",
   "main": "server.js",
   "scripts": {
@@ -14,6 +14,6 @@
   },
   "repository": {
   "type": "git",
-  "url": "https://github.com/navveenbalani/google-cloud-kubernetes-secure-e2e.git"
+  "url": "https://github.com/cloudsolutions-academy/google-cloud-kubernetes-secure-e2e.git"
   }
 }
