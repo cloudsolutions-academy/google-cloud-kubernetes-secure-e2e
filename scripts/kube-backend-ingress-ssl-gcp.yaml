@@ -4,14 +4,14 @@ metadata:
   name: kube-ingress-gcp
   annotations:
      kubernetes.io/ingress.allow-http: "true"
-     kubernetes.io/ingress.global-static-ip-name: navveen-api-ip	
+     kubernetes.io/ingress.global-static-ip-name: backend-api-loadbalancer	
 spec:
   tls:
   - hosts:
-    - apis.navveenbalani.dev
+    - api.cloudsolutions.academy
     secretName: kube-api-ssl-secret
   rules:
-  - host: apis.navveenbalani.dev
+  - host: api.cloudsolutions.academy
     http:
       paths:
       - backend:

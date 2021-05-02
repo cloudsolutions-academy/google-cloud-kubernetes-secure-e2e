@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-app-deployment-gcp
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: kube-e2e-service
-        image: gcr.io/navveen-api/kube-e2e-solution:v1
+        image: gcr.io/<project-id>/google_cloud_kubernetes_secure_e2e:v1
         ports:
           - containerPort: 8080
       - name: kube-esp
@@ -22,17 +22,17 @@ spec:
         args: [
           "--http_port", "8081",
           "--backend", "127.0.0.1:8080",
-          "--service", "apis.navveenbalani.dev",
+          "--service", "api.cloudsolutions.academy",
           "--rollout_strategy", "managed",
         ]
         readinessProbe:
          httpGet:
-          path: /healthz?key=AIzaSyC0m7d4cc-jOwJIzymv9ntObF1ukIMrTc-
+          path: /healthz?key=<api_key>
           port: 8081
          initialDelaySeconds: 60
         livenessProbe:
          httpGet:
-          path: /healthz?key=AIzaSyC0m7d4cc-jOwJIzymv9ntObF1ukIMrTc-
+          path: /healthz?key=<api_key>
           port: 8081
          initialDelaySeconds: 60
         ports:
