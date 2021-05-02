@@ -16,7 +16,7 @@ spec:
       serviceAccountName: ksa-wl
       containers:
       - name: kube-e2e-service
-        image: gcr.io/hazel-flag-303514/google_cloud_kubernetes_secure_e2e:v1
+        image: gcr.io/<project-id>/google_cloud_kubernetes_secure_e2e:v1
         ports:
           - containerPort: 8080
       - name: kube-esp
@@ -29,12 +29,12 @@ spec:
         ]
         readinessProbe:
          httpGet:
-          path: /healthz?key=AIzaSyDbNhJD2dkdyE_brg-YcdIrQEM9M1jrq84
+          path: /healthz?key=<api_key>
           port: 8081
          initialDelaySeconds: 60
         livenessProbe:
          httpGet:
-          path: /healthz?key=AIzaSyDbNhJD2dkdyE_brg-YcdIrQEM9M1jrq84
+          path: /healthz?key=<api_key>
           port: 8081
          initialDelaySeconds: 60
         ports:
